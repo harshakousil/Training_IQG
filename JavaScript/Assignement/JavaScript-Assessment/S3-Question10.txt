@@ -1,0 +1,58 @@
+ES6, also known as ECMAScript 2015, introduced several new features to JavaScript. Here's an overview of some of the key features:
+
+ 
+
+1.let and const: The let and const keywords were introduced to declare block-scoped variables. 
+                 Unlike var, which has function scope, let and const are limited in scope to the block they are defined in.
+
+     Example :-
+                const number = 50
+
+                const number = 100
+
+                    // SyntaxError: Identifier 'number' has already been declared
+
+                    function print() {
+                        let square = number * number
+
+                        let number = 50
+                        }
+
+                    print()
+                    // ReferenceError: Cannot access 'number' before initialization
+
+
+2.Arrow functions: Arrow functions provide a concise syntax for writing function expressions. They have implicit return statements and lexically bind this, making them useful for callback functions and simplifying code.
+
+      Example :-
+
+3.Default parameters: ES6 allows specifying default values for parameters in function declarations. If a parameter is not provided, the default value will be used instead.
+
+ 
+
+4.Template literals: Template literals provide an improved way to concatenate strings by using backticks (`) instead of quotes. They support embedded expressions and multi-line strings.
+
+ 
+
+5.Destructuring assignment: This feature provides a convenient way to extract multiple properties from objects or elements of arrays into individual variables using a concise syntax.
+
+6.Spread syntax: The spread syntax (...) allows an iterable (like an array or string) to be expanded or spread into individual elements. It can be used when calling functions, creating arrays, or copying objects.
+
+
+7.Classes: ES6 introduced a more conventional syntax for defining classes in JavaScript, offering syntactic sugar over prototype-based inheritance. Classes allow easier creation of objects with constructor functions and defining methods.
+
+ 
+
+8.Modules: ES6 introduced a native module system, enabling developers to organize their code into separate files. Modules can export and import functionality between files, making it easier to work with large codebases.
+
+ 
+
+9.Promises: Promises provide a better way to handle asynchronous operations compared to callbacks. They represent the result of an asynchronous operation and allow chaining multiple operations while handling success and error conditions.
+
+ 
+
+10.Enhanced object literals: ES6 enhanced object literals provide shorthand syntax for defining object properties and methods. They also allow computed property names, making it easier to dynamically define object keys.
+
+ 
+
+These are just some of the major features introduced in ES6. There are other additions like for...of loops, Map and Set, Symbol data type, and more. These new features have greatly improved the readability, maintainability, and expressiveness of JavaScript code.

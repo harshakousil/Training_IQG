@@ -1,0 +1,25 @@
+#Write a program to find whether a given year is a leap year or not.
+
+
+
+int year;
+
+
+accept year;
+
+
+if(year %4==0)then    #leap year comes for every 4 years
+	if(year%100 ==0)then   #if year is a century
+		if(year %400 ==0)then
+		
+			print("Leap year");	
+			
+		else:
+			print("Not a leap year");
+			
+	else:   #if the year is not a century
+		print("Leap year");
+else:
+	print("Not a leap year");
+	
+	

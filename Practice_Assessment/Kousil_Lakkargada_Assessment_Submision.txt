@@ -1,0 +1,863 @@
+			
+			kousil Lakkaprgada. 
+			
+
+Assessment on java design patterns and data structures.
+
+----------------------------------------------------
+Section -1.
+	1 :- Option  B
+	2 :- Option  A
+	3 :- Option  A
+	4 :- Option  D
+	5 :- Option  A
+	6 :- Option  A
+	7 :- Option  C
+	8 :- Option  B
+	9 :- Option  C
+	10:- Option  D
+	11:- Option  D
+	12:- Option  C
+	13:- Option  A
+	14:- Option  B
+	15:- Option  A
+	16:- Option  A
+	17:- Option  D
+	18:- Option  A
+	19:- Option  D
+	20:- Option  D
+
+
+SECTION - 2 :
+--------------------------
+Q1) 5
+
+ 
+
+Q2) Delete the first element in the list
+
+ 
+
+Q3) head-1-6-2-3-4-5-0-tail
+
+ 
+
+Q4) 10 30 40 15
+
+ 
+
+Q5) 2
+
+---------------------------------------------------------------------------------------------------
+Section -3.
+
+
+1. What is Data Structure ? Provide a brief  Overview of data Structures.
+
+Ans :-
+A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated  efficiently.
+ 
+Data structure not only used for organizing the data. It is also used for processing , retrieving and storing data.
+
+The data structure name indaicates itself that organizing the data in memory.Therea re many ways to of organizing the data in memory [Array,Stacks, Queues, LinkedLists....].
+
+
+Overview Of Data structures:-
+
+
+Data Structures are majorly divided into 2 Categories.
+
+1. Primitive Data structures.
+2. Non-Primitive Data-structures.
+
+
+
+Primitive data structures consist of the numbers and the characters that come in-built into programs.
+These data structures can be manipultaed or operated directly by machine-level instructions.
+
+Integer,Float,Character, Boolean comes under the Primitive Data structres.
+
+Primitive data structures also called as Simple data types.
+
+
+Non-Primitive data structures are those data structres derived from primitive Data Structures.
+
+these can't be manipulted or operated directly by machine-level instructions.
+
+These Non-primitive data strctuces are futher classifed into 2 types.
+
+    Linera Data structres and Non-Linear data structures.
+	
+		Linear Data Structure :-
+		
+				The arrangement of  data in a sequential manner is known as a linear data strctures.
+				Tha data strctures used for this purpose are ARRAY's[static data strctures], LINKEDLIST's, STACKS, and QUEUE's[ Dynamic data Structures].
+				In this, One element is connected to only one another ele,element in a linear form.
+				
+			Ex:-  ARRAY, STACKS, LINKEDLIST, QUEUE.
+			
+		Non-Linear Data structures :-
+				The arragnement of data is not ina sequentail order.
+				The Insertion and removeal of the data elements is not feaible in a linear manner.
+				There existz a hierarchical relationship between the Individual data items.
+				
+			Ex:- TREE's and GRAPH's.
+			
+			
+			
+In coclusion :- A data strcture is a way of organizing the data so thta it can be used efficeiently.
+For example, a stack ia an ADT, Which uses either array's or Linked lIst data strcture for implementation.
+
+Data strctures have many advantgaes like :- Efficiency. Reusability. Abstarction.
+
+
+
+2. Explain Searching algorithms and Sorting Algorithms with suitable Sample Illustations.
+
+
+Ans :-
+
+
+		 Searching Algorithms are designed to check for an element or retrive an element from any data strcture where it is stored.
+		 
+		Based on the type of search operation, these algorithms are generally classified into two categories :
+				1. Sequentila Search. [Linear Search]
+				
+				2. Interval Search .[ Binary Search]
+				
+				
+				
+					Linear Search :-
+					
+							Linear Search is defined as a sequential search algorithm that starts at one end and goes through each element of a list until the desired element isfound , otherwise the search continues till the end of  tha data set.
+							
+							PseudoCode :-
+							
+									method LinearSearch(List, value):
+										For each item in the Lsit:
+											if item==value:
+												Retun the Item index.
+											end if
+										end for.
+									end method.
+									
+									
+							
+							Example :-
+								 Class LinearSearch{
+									public static int liner(int Arr[], int x)
+									{
+										int N= Arr.length;
+										for(int i=0; i<n:i++)
+										{
+											if(Arr[i]==x)
+												return i;
+										}
+										return -1;
+									}
+								 
+								 }
+				
+					Binary Search [interval search] :-
+					
+						Binary search is defied as a searching alogithm used in a sorted array by repeatedly diving the search interval in half. the idea of binary search is to use the information that the array is sorted and reduce the time complexity.
+						
+							PseudoCode :-
+							
+									binarySearch(arr x, low, high)
+											repeat till low=high:
+												mid=(low+high)/2.
+												
+												if(x=arr[mid]):
+													return mid
+													
+												else if (x>arr[mid]):
+													low=mid+1;
+													
+												else:
+													high=mid-1;
+													
+							Example :-
+									Class Binary{
+									
+									  int BinarySearch(int arr[], int x)
+									  {
+									  int l=0, r=arr.length-1;
+											while( l<=r)
+											{
+												int m=l+(r-1)/2;
+												
+												if(arr[m]==x)
+													return m;
+													
+												if(arr[m]<x)
+													l=m+1;
+													
+												else
+													r=m-1;
+												
+											}
+											return -1
+									  }
+									}
+									
+									
+									
+									
+			Sorting :-
+								
+				A Soting Alogirthm is used to reArranmge a given array or list of elements accaording to a comparison on trhe elements>
+												
+				Soring is a process of ordering or placing a list of elements form a collection in some kind of order. It is nothing but the storage of data insorted order.
+												
+									
+				Sorting algorithms are divied majorly into 2 parts.
+					
+					1. Comaprion-based. [ Bubble sort, IUnsertion sort, Slectio sort, quick sort, merge sort, heap sort].
+													
+					2. Non- Comaprsion based.[ counting sort, Radix sort].
+													
+													
+						Selection Sort :-
+
+							Selection sort is a sample and effiecient sorting algorithm that works by repatedly selecting the smallest element from the unsorted portion of the List and moving it to the sorted portion of the lsit.
+										
+											
+						``Example :-
+							 public class SelectionSort {
+													 
+								 void sort(int arr[])
+								{
+									int n=arr.length;
+														
+										for(int i=0; i<n-1; i++)
+										{
+											for( int j=i+1; j<n; j++)
+											{
+												if(arr[j]<arr[min_index])
+												{
+													min_index=j;
+													int temp= arr[min_index];
+													arr[min_index=arr[i];
+													arr[i]=temp;
+												}
+											}
+										}
+								}
+							}
+													
+						Bubble Sort :-
+
+						bubble sort  is the simplest sorting alogirthm thta works by repeatedly sapping the adjacent elements if thet are in the wrong odrer.
+																	
+												
+						Example :-
+												
+							public class Bubble{
+													
+								void bubbleSort(int arr[])
+								{
+								`int n=arr.length;
+														
+									for(int i=0; i<n-1;i++)
+									{
+										for(int j=0; j<n-i-1; j++)
+										{
+										if(arr[j]> arr[j+1])
+											{
+											int temp =arr[j]
+											arr[j]=arr[j+1]
+											arr[j+1]=temp;
+											}						
+										}
+									}
+								}
+							}
+										
+
+
+3. What are Creational Design patterns used or ? Discuss the Types of it and provide Sample Illustrations for any 2 types of your choice.
+
+
+Ans :- 	 
+
+Creational Design Patterns :-
+
+	These are the design patterns which mainly deals with the instantiation of a class / object.Mainly there are 5 types of it.
+
+	Builder  Pattern :-
+			Buillder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and      representations of an object using the same construction code.
+
+ 
+
+	Singleton  Pattern :-
+			This pattern lets you ensure that a class has only one object, while providing a global access point to this instance.
+
+ 
+
+	Prototype pattern :- 
+			This pattern lets you copy existing objects without making your code dependent on their classes.
+		
+	
+	Abstract Factory Method 
+		This pattern lets you produce families of related objects without specifying their concrete class.
+	
+	
+	Factory Method 
+		This pattern provides an interface for creating objects in a superclass but allows subclass to alter the type 
+		of the object which is created.
+
+ 
+
+program :[factory Method]
+
+ 
+
+public interface Shape {
+   void draw();
+}
+
+ 
+
+public class Rectangle implements Shape {
+   @Override
+   public void draw() {
+      System.out.println("Inside Rectangle::draw() method.");
+   }
+}
+
+ 
+
+public class Circle implements Shape {
+   @Override
+   public void draw() {
+      System.out.println("Inside Circle::draw() method.");
+   }
+}
+
+ 
+
+public class ShapeFactory {
+   //use getShape method to get object of type shape 
+   public Shape getShape(String shapeType){
+      if(shapeType == null){
+         return null;
+      }        
+      if(shapeType.equalsIgnoreCase("CIRCLE")){
+         return new Circle();
+      } else if(shapeType.equalsIgnoreCase("RECTANGLE")){
+         return new Rectangle();
+      } 
+      return null;
+   }
+}
+
+ 
+
+public class FactoryPatternDemo {
+   public static void main(String[] args) {
+      ShapeFactory shapeFactory = new ShapeFactory();
+
+ 
+
+//get an object of Circle and call its draw method.
+      Shape shape1 = shapeFactory.getShape("CIRCLE");
+
+ 
+
+//call draw method of Circle
+      shape1.draw();
+
+ 
+
+//get an object of Rectangle and call its draw method.
+      Shape shape2 = shapeFactory.getShape("RECTANGLE");
+
+ 
+
+//call draw method of Rectangle
+      shape2.draw();
+   }
+}
+
+ 
+
+program :[Abstract Factory Method ]
+
+ 
+
+public interface Shape {
+   void draw();
+}
+
+ 
+
+public class RoundedSquare implements Shape {
+   @Override
+   public void draw() {
+      System.out.println("Inside RoundedSquare::draw() method.");
+   }
+}
+
+ 
+
+public class Rectangle implements Shape {
+   @Override
+   public void draw() {
+      System.out.println("Inside Rectangle::draw() method.");
+   }
+}
+
+ 
+
+public abstract class AbstractFactory {
+   abstract Shape getShape(String shapeType) ;
+}
+
+ 
+
+public class ShapeFactory extends AbstractFactory {
+   @Override
+   public Shape getShape(String shapeType){    
+      if(shapeType.equalsIgnoreCase("RECTANGLE")){
+         return new Rectangle();         
+      }
+      return null;
+   }
+}
+
+ 
+
+public class RoundedShapeFactory extends AbstractFactory {
+   @Override
+   public Shape getShape(String shapeType){    
+      if(shapeType.equalsIgnoreCase("SQUARE")){
+         return new RoundedSquare();
+      }     
+      return null;
+   }
+}
+
+ 
+
+public class FactoryProducer {
+   public static AbstractFactory getFactory(boolean rounded){   
+      if(rounded){
+         return new RoundedShapeFactory();         
+      }else{
+         return new ShapeFactory();
+      }
+   }
+}
+
+ 
+
+public class AbstractFactoryPatternDemo {
+   public static void main(String[] args) {
+      //get shape factory
+      AbstractFactory shapeFactory = FactoryProducer.getFactory(false);
+      //get an object of Shape Rectangle
+      Shape shape1 = shapeFactory.getShape("RECTANGLE");
+      //call draw method of Shape Rectangle
+      shape1.draw();
+
+      //get an object of Shape Square 
+      Shape shape2 = shapeFactory1.getShape("SQUARE");
+      //call draw method of Shape Square
+      shape2.draw();
+  }
+}
+
+
+4.What are Structural  Design patterns used or ? Discuss the Types of it and provide Sample Illustrations for any 2 types of your choice.
+
+Structural design patterns :
+   
+      Structural design patterns are concerned with how classes and objects 
+	  can be composed, to form larger structures.
+	  The structural design patterns simplifies the structure by identifying the
+	  relationships.
+	  
+Types of Structural design patterns:
+   
+   we have 7 types of structural design patterns
+   
+   1) Adapter pattern:
+       
+	   Adapting an interface into another to client expectation.
+	
+   2) Bridge pattern:
+      
+	   Separating abstraction from implementation.
+	
+   3) Composite pattern:
+   
+      Allowing client to operate on hierarchy of objects
+	 
+   4) Decorator pattern:
+      
+	    Adding functionality to an objects dynamically.
+    
+    5) Facade Pattern:
+	 
+	    Providing an interface to a set of interfaces.
+		
+     6) Flyweight pattern:
+	   
+	      reusing an object by sharing it.
+		  
+	7) Proxy pattern:
+	    
+		 Representing another object
+	   
+	  
+	 
+	 Adapter Pattern:
+	 
+	 An adapter Pattern is nothing but converting the interface of a class into another
+	 interface that a client wants.
+	 
+	 Example :
+	    
+		
+		Target Interface: This is the desired interface class which will be used by the clients.
+		
+		Adapter class: This class is a wrapper class which implements the desired target interface and modifies the 
+		               specific request available from the Adaptee class.
+		
+		Adaptee class: This is the class which is used by the Adapter class to reuse the existing 
+		                functionality and modify them for desired use.
+						
+		Client: This class will interact with the Adapter class.
+		
+		step 1: create a target interface 
+		
+		      
+			   public interface CreditCard { 
+				   
+						public void giveBankDetails();  
+						public String getCreditCard();  
+					
+				    }  
+				
+	    step 2: create adapter class
+		    
+			  
+			    public class BankDetails{
+				
+						private String bankName;  
+						private String accHolderName;  
+						private long accNumber;  
+						  
+						public String getBankName() {  
+							return bankName;  
+						}  
+						public void setBankName(String bankName) {  
+							this.bankName = bankName;  
+						}  
+						public String getAccHolderName() {  
+							return accHolderName;  
+						}  
+						public void setAccHolderName(String accHolderName) {  
+							this.accHolderName = accHolderName;  
+						}  
+						public long getAccNumber() {  
+							return accNumber;  
+						}  
+						public void setAccNumber(long accNumber) {  
+							this.accNumber = accNumber;  
+						}  
+						
+					}
+					
+		step 3: create adapter class
+                      
+               
+                    import java.io.BufferedReader;  
+					import java.io.InputStreamReader;  
+					public class BankCustomer extends BankDetails implements CreditCard {  
+					
+					
+					
+										 public void giveBankDetails(){  
+										  try{  
+										   BufferedReader br=new BufferedReader(new InputStreamReader(System.in));  
+											  
+										   System.out.print("Enter the account holder name :");  
+										   String customername=br.readLine();  
+										   System.out.print("\n");  
+											  
+										   System.out.print("Enter the account number:");  
+										   long accno=Long.parseLong(br.readLine());  
+										   System.out.print("\n");  
+											  
+										   System.out.print("Enter the bank name :");  
+										   String bankname=br.readLine();  
+											  
+										   setAccHolderName(customername);  
+										   setAccNumber(accno);  
+										   setBankName(bankname);  
+										   }catch(Exception e){  
+												e.printStackTrace();  
+										   }  
+										  }  
+										  @Override  
+										  public String getCreditCard() {  
+										   long accno=getAccNumber();  
+										   String accholdername=getAccHolderName();  
+										   String bname=getBankName();  
+												  
+										   return ("The Account number "+accno+" of "+accholdername+" in "+bname+ "  
+																bank is valid and authenticated for issuing the credit card.");
+													
+											}
+											
+										}
+										
+		step 4 :  Create a client class
+		
+		
+      		public class AdapterPatternDemo { 
+			
+				  public static void main(String args[]){  
+				  CreditCard targetInterface=new BankCustomer();  
+				  targetInterface.giveBankDetails();  
+				  System.out.print(targetInterface.getCreditCard());  
+				  
+				 }   
+				}
+				
+	
+	Bridge Pattern :
+	
+	    A Bridge Pattern is nothing but that just "decouple the functional abstraction from the implementation 
+		so that the two can vary independently".
+		
+		Example :
+		  
+		      step1 :
+			  
+			      public interface Question {  
+						public void nextQuestion();  
+						public void previousQuestion();  
+						public void newQuestion(String q);  
+						public void deleteQuestion(String q);  
+						public void displayQuestion();  
+						public void displayAllQuestions();  
+					}  	
+			  step2 :
+			    
+				
+				    import java.util.ArrayList;  
+					import java.util.List;  
+					public class JavaQuestions implements Question {  
+						 private List <String> questions = new ArrayList<String>();  
+						 private int current = 0;  
+						 public JavaQuestions(){  
+							questions.add("What is class? ");  
+							questions.add("What is interface? ");  
+							questions.add("What is abstraction? ");  
+							questions.add("How multiple polymorphism is achieved in java? ");  
+							questions.add("How many types of exception  handling are there in java? ");  
+							questions.add("Define the keyword final for  variable, method, and class in java? ");  
+							questions.add("What is abstract class? ");  
+							questions.add("What is multi-threading? ");  
+						 }  
+						 public void nextQuestion() {  
+							if( current <= questions.size()-1 )  
+							current++;  
+							System.out.print(current);  
+						 }  
+						  
+						 public void previousQuestion() {  
+							if( current > 0 )  
+							current--;  
+						 }  
+						 public void newQuestion(String quest) {  
+							questions.add(quest);  
+						 }  
+						  
+						 public void deleteQuestion(String quest) {  
+							questions.remove(quest);  
+						 }  
+						  
+						 public void displayQuestion() {  
+							System.out.println( questions.get(current) );  
+						 }  
+						 public void displayAllQuestions() {  
+							for (String quest : questions) {  
+							System.out.println(quest);  
+						 }  
+						}  
+						}
+														  
+			step3 :
+   
+                    public class QuestionManager  {  
+								protected Question q;  
+								public String catalog;  
+								public QuestionManager(String catalog) {  
+								this.catalog=catalog;  
+								}  
+								public void next() {  
+								q.nextQuestion();  
+								}  
+								public void previous() {  
+								q.previousQuestion();  
+								}  
+								public void newOne(String quest) {  
+								q.newQuestion(quest);  
+								}  
+								public void delete(String quest) {  
+								q.deleteQuestion(quest);  
+								}  
+								public void display() {  
+								q.displayQuestion();  
+								}  
+								public void displayAll() {  
+									System.out.println("Question Paper: " + catalog);  
+								q.displayAllQuestions();  
+								}  
+							}
+							
+			step4 :
+			
+			      
+				      public class QuestionFormat extends QuestionManager {  
+								public QuestionFormat(String catalog){  
+									super(catalog);  
+								}  
+								public void displayAll() {  
+									System.out.println("\n---------------------------------------------------------");  
+									super.displayAll();  
+									System.out.println("-----------------------------------------------------------");  
+								}  
+							}
+							
+			step 5:
+			
+			  
+						  public class BridgePatternDemo {  
+									public static void main(String[] args) {  
+									QuestionFormat questions = new QuestionFormat("Java Programming Language");  
+									questions.q = new JavaQuestions();  
+										questions.delete("what is class?");  
+										questions.display();  
+									questions.newOne("What is inheritance? ");  
+									  
+									questions.newOne("How many types of inheritance are there in java?");  
+									questions.displayAll();  
+									}  
+								}
+								
+								
+5. What are  Behavioral Design patterns used or ? Discuss the Types of it and provide Sample Illustrations for any 2 types of your choice.
+
+
+
+Behavioral Design Patterns:
+    Behavioral design patterns provide a solution for better interaction between objects and gow to provide loose- coupling and flexibility to extend easily.
+
+    In these design patterns, the interaction between the objects should be in such a way that they can easily talk to each other and still should be loosely coupled.
+That means the implementation and the client should be loosely coupled in order to avoid hard coding and dependencies.    
+
+ 
+
+There are different types of Behavioral Design Patterns
+    1.Chain of Resposibility
+    2. Mediator 
+    3. Iterator
+    4. Command
+    5. Momento
+    6. Observer
+    7. State
+    8. Strategy
+    9. Template Method
+    10. Visitor
+
+ 
+
+1. Chain of Resposibility
+    Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+For example if we consider currency dispenser
+We will have a class Currency having getAmount method in it.
+public class Currency {
+
+    private int amount;
+
+    public Currency(int amt) {
+        this.amount = amt;
+    }
+
+ 
+
+    public int getAmount() {
+        return amount;
+    }
+
+}
+
+ 
+
+public interface DispenseChain {
+
+    public void setNextChain(DispenseChain nextChain);
+
+    public void dispense(Currency cur);
+
+}
+
+ 
+
+we sill have methods rupeedispenser class like 100RupeeDispenser, 200RupeeDispenser, 500RupeeDispenser
+
+in these methods we implents DispenseChain interface and override methods insdie and verify whether amount is greater than 100 and divadable by 100 or not and then we dispense money. In the same way we check for 200 and 500 rupee notes.
+
+2.Mediator:
+    Mediator is a behavioral design pattern that lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
+
+ 
+
+For example if we consider chatMediator app
+we will be having an interface ChatMediator having a sendMessage method in it.
+
+ 
+
+public interface ChatMediator {
+
+    public void sendMessage(String msg, User user);
+
+    void addUser(User user);
+
+}
+
+ 
+
+Here we implements ChatMediator interface and override methods in it then we add users to a list and we verify that the user who is sending should not recive an message.
+public class ChatMediatorImpl implements ChatMediator {
+
+ 
+
+    private List<User> users;
+
+ 
+
+    public ChatMediatorImpl() {
+        this.users = new ArrayList<>();
+    }
+
+    @Override
+    public void addUser(User user) {
+       this.users.add(user);
+    }
+
+    @Override
+    public void sendMessage(String msg, User user) {
+        for(User u: this.users) {
+            // Message should not be received by the User Sending it
+            if(u != user) {
+                u.receive(msg);
+            }
+        }
+    }
+}

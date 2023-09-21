@@ -1,0 +1,5 @@
+package tms.iqgateway.bussiness;
+
+public class AdminOperationsImpl implements AdminOperations {
+
+}

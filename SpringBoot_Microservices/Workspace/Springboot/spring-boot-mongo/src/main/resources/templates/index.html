@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th ="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+	
+	<div th:switch="${offences}">
+		<h2 th:case="null">No Offences Yet!</h2>
+			<div th:case="*">
+				<h2>Persons</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Offence Id</th>
+							<th> Offence type </th>
+							<th>penality</th>
+							<th>vehicle Type</th>
+							<th>Edit</th>
+							<th>Delete</th>
+						</tr>
+					</thead>
+				
+					<tbody>
+						<tr th:each="offDet : ${offences}">
+							<td th:text="${offDet.OffenceId}"></td>
+							<td th:text="${offDet.OffenceType}"></td>
+							<td th:text="${offDet.penality}"></td>
+							<td th:text="${offDet.vehicleType}"></td>
+							<td> <a th:href="@{/edit/{id}(id=${offDet.id})}">Edit </a></td>
+							<td> <a th:href="@{/delete/{id}(id=${offDet.id})}">Delete </a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p> <a href="/Add-offence">Add a New Offence </a>
+	
+	</div>
+	
+	
+	
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

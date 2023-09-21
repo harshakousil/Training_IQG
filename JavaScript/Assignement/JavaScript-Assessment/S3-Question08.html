@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<h1>Person Details</h1>
+  <div id="personDetails"></div>
+  <script>
+    const person = { name: 'Kousil', age: 22, city: 'Vijayawada' };
+    const personDetailsElement = document.getElementById('personDetails');
+    personDetailsElement.textContent = `Name: ${person.name}, City: ${person.city}`;
+</script>
+</body>
+</html>

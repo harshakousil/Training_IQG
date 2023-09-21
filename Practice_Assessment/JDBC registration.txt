@@ -1,0 +1,51 @@
+JDBC registration
+
+
+1. regsiter the driver in the code:
+
+- DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
+
+-class.forName("oracle.jdbc.driver.OracleDriver");
+
+
+If you want dediacted entity/driver then go for registering the driver
+
+if you shared entity then go for class.forName
+
+
+
+Different Types of Drivers.
+
+Using oracle.jdbc.driver , we can use 4 types of drivers
+
+1. JDBC ODBC  Brdige driver
+
+ODBC-open database connectivity.
+
+2.Native-Api partly java Driver -partly java. It talks to databse using native protocol
+
+
+3.Jdbc-Net Pure Java driver - Used for multi tioerd architecture [cleint-server-databse architecture].
+
+
+4.Native-protocal Pure java driver [databse specific].[EX :-MysQL].
+
+
+
+an URL in terms of jdbc  connection coantian 3 major parts
+
+protocal:sub protocal:subname/databse name
+
+ex:- jdbc:oracle:thin:@myhost:1521:ORCL;
+
+
+The statement interface provides three methods to excute SQl statemnets
+
+-Use excuteQuery(String sql) for SELECT statements -returns resultset
+
+-use executeUpdate(string sql) for DML and DDL -returns int
+
+-use execute(String sql) for any SQl statement -returns boolean value
+
+
+

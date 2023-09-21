@@ -1,0 +1,58 @@
+package tms.iqgateway.bussiness;
+
+import tms.iqgateway.entities.OwnerEO;
+import tms.iqgateway.entities.VehicleEO;
+
+public class RTOOperationsImpl implements RTOOperations {
+
+	@Override
+	public int addVehicle(VehicleEO vehicle) {
+		// TODO Auto-generated method stub
+		System.out.println("Vehicle Added Sucessfully");
+		
+		return 1;
+	}
+
+	@Override
+	public int removeVehicle(VehicleEO vehicle) {
+		// TODO Auto-generated method stub
+		System.out.println("Vehicle removed  Sucessfully");
+		return 1;
+	}
+
+	@Override
+	public int ModifyVehicle(VehicleEO vehicle) {
+		// TODO Auto-generated method stub
+		System.out.println("Vehicle Modified Sucessfully");
+		return 0;
+	}
+
+	@Override
+	public int transferVehicle(VehicleEO vehicle) {
+		// TODO Auto-generated method stub
+		System.out.println("Vehicle transfered Sucessfully");
+		return 0;
+	}
+
+	@Override
+	public int addOwner(OwnerEO owner) {
+		// TODO Auto-generated method stub
+		System.out.println("Owner Added Sucessfully");
+		return 0;
+	}
+
+	@Override
+	public int modifyOwner(OwnerEO owner) {
+		// TODO Auto-generated method stub
+		System.out.println("Owner Modified Sucessfully");
+		return 0;
+	}
+
+	@Override
+	public int removeOwner(OwnerEO owner) {
+		// TODO Auto-generated method stub
+		System.out.println("Owner Removed Sucessfully");
+		return 0;
+	}
+
+}

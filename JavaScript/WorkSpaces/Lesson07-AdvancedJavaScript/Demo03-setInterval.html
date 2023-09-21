@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The current Date and Time is :</h2>
+    <span id="clock"></span>
+    <!-- <button onclick="setTimeout(delayInExcecution,5000)"> Click here</button> -->
+</body>
+
+<script >
+    function showTime()
+    {
+        var sysDate= new Date();
+        document.getElementById("clock").innerHTML=sysDate.toLocaleTimeString();
+    }
+
+    setInterval(showTime,1000);
+</script>
+</html>

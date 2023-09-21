@@ -1,0 +1,29 @@
+#Write a program where you accept the color code and display the color selected?
+
+
+#Let's assume that user gives hexy color code with respect to color coding
+
+
+
+String colorCode;
+
+accept colorcode;
+
+
+#all hexColorcode should start with (#) symbol,
+
+#Check whether String contains (#) symbol
+
+
+if(colorCode.contains(#))then
+	if(colorCode == #ffff)then
+		print("White color");
+		
+	else if(colorCode == #000)then
+		print("Black color");
+		
+	else if(colorCode == #111)then
+		print("Blue color);
+else:
+	print("please Enter the correct color code");
+	

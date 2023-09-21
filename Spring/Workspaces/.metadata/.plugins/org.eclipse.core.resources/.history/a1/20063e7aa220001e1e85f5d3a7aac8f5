@@ -1,0 +1,51 @@
+package training.iqgateway.business.impl;
+
+import java.util.List;
+
+import training.iqgateway.business.AdminOperations;
+import training.iqgateway.dao.DepartmentDAO;
+import training.iqgateway.entities.DepartmentEO;
+
+public class AdminOperationsImpl implements AdminOperations {
+
+	
+	private DepartmentDAO departmentDAORef;
+	
+	public AdminOperationsImpl()
+	{
+		
+	}
+	
+	public AdminOperationsImpl(DepartmentDAO departmentDAORef) {
+		super();
+		this.departmentDAORef = departmentDAORef;
+	}
+
+	public DepartmentDAO getDepartmentDAORef() {
+		return departmentDAORef;
+	}
+
+	public void setDepartmentDAORef(DepartmentDAO departmentDAORef) {
+		this.departmentDAORef = departmentDAORef;
+	}
+
+	@Override
+	public Integer addDepartment(DepartmentEO deptEO) {
+		// TODO Auto-generated method stub
+		
+		return departmentDAORef.insertDepartment(deptEO);
+	}
+
+	@Override
+	public List<DepartmentEO> fecthAllDepartments() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<DepartmentEO> fecthDepartmentsBasedonLocation(Integer locationId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

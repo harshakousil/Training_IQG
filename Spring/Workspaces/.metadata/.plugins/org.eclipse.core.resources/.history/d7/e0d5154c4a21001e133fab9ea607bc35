@@ -1,0 +1,14 @@
+package training.iqgateway.web;
+
+public class DepartmentVO {
+	
+	
+	private Integer DeptId;
+	
+	private String deptName;
+	
+	private Integer mgrId;
+	
+	private Integer locId;
+
+}

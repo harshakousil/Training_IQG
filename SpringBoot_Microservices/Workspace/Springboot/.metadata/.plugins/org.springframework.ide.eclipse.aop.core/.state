@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Spring-Boot-Validation"/>
+<aop-project name="Spring-Boot-Thymeleaf"/>
+<aop-project name="Pharma-GenerateReportServices"/>
+<aop-project name="Spring-Boot-Lombark"/>
+<aop-project name="Spring-Boot-Offence"/>
+<aop-project name="Pharma-MedicineService"/>
+<aop-project name="SpringbootWay-3"/>
+<aop-project name="Pharma-Authenticationservice"/>
+<aop-project name="TMS-AdminModule"/>
+<aop-project name="Spring-Boot-Logging"/>
+<aop-project name="Spring-Boot-Actuator"/>
+<aop-project name="Spring-Boot-JDBC"/>
+<aop-project name="Pharma-PatientService"/>
+<aop-project name="Tms-TransferVehicle"/>
+<aop-project name="spring-boot-mongo"/>
+<aop-project name="Spring-Boot-ORM"/>
+<aop-project name="spring-boot-app"/>
+</aop-reference-model>

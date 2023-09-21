@@ -1,0 +1,20 @@
+package training.iqgateway.driver;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import training.iqgateway.dao.DepartmentDAO;
+
+public class DriverApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		BeanFactory beanfactoryRef = new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		
+		DepartmentDAO deptDAORef=(DepartmentDAO) beanfactoryRef.getBean("departmentDAOBean");
+		
+	}
+
+}

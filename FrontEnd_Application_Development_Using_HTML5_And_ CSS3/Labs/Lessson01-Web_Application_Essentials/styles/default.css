@@ -1,0 +1,13 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #d9e7f2;
+    margin: 20px;
+    padding: 30px;
+    border: 2px solid red;
+  }
+  h1 {
+    color: #18466a;
+  }
+  #nameSpan {
+    font-weight: bold;
+  }

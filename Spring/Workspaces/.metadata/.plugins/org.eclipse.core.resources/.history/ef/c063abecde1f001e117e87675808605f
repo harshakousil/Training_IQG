@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id ="customerBean" class="training.iqgateway.business.Customer">
+
+	<property name="id" value="1001"/>
+	<property name="name" value="Rahul"/>
+	<property name="address" value="Indira nagar"/>
+	<property name="phone" value="987656872"/> 
+	
+	
+</bean>
+<bean id ="ccBean" class="training.iqgateway.business.CurrencyConverterImpl" scope="singleton">
+
+<!-- setter Injection -->
+
+  <property name="customerRef" ref="customerBean"/> 
+  
+ 
+
+</bean>
+<!-- Service Components [Advice] -->
+<bean id="logBefAdviceService" class="training.iqgateway.aop.LoggingBeforeAdvice"></bean>
+
+
+<bean id="logAftAdviceService" class="training.iqgateway.aop.LoggingAfterAdvice"></bean>
+
+
+<!--  TO Bridge Services With Bussiness Componet -->
+
+<bean id="businessBean" class="org.springframework.aop.framework.proxyFactoryBean">
+
+<property name="proxyInterfaces" value ="training.iqgateway.business.CurrencyConveter"/>
+
+
+<!--  Registering the InterCeptors -->
+<property name="interceptorNames">
+<list>
+<value>logBefAdviceService</value>
+<value>logAftAdviceService</value>
+</list>
+
+</property>
+
+<!-- Registering the Bussines Component -->
+<property name="target">
+<ref bean="ccBean"/>
+</property>
+</bean>
+</beans>

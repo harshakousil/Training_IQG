@@ -1,0 +1,31 @@
+package tms.rto.transfervehicle;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping(value="/transfervechicle")
+public class HomeController {
+	
+	@Autowired
+	private RegistrationService RegistrationRef;
+	
+	@RequestMapping("/{vehicleNumber}")
+	public List<RegistrationEO> fecthRegistrationsByVehicleNum(@PathVariable("vehicleNumber")String VehNumber)
+	{
+		return RegistrationRef.fectchDetails(VehNumber);
+	}
+	
+
+
+//	@RequestMapping(value="/FectchDetails",method=RequestMethod.GET)
+//	Public List<RegistrationEO> fectchRegistrationByVehicleNumber(Integer 1)
+//	{
+//		
+//	}
+}

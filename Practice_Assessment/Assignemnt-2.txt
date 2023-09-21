@@ -1,0 +1,181 @@
+#Write a Program to reverse a number.
+
+
+int number;
+int reverseNumber=0;
+int remainder;
+
+accept number;
+
+while(number!=0):
+	remainder=number%10;
+	
+	reverseNumber=reverseNumber*10+remainder;
+	
+	number=number/10;  			#condition for the while loop
+	
+print(reverseNumber);
+
+
+
+
+#Write a program to display the factorial of a number.
+
+
+int number;
+
+double factorial=1;
+
+accept number;
+if(number<0)then
+	print("Factorial does not exist");
+	
+else:
+	 for i in range number:       		#for(i=1;i<=number;i++)
+		factorial=factorial*i;
+
+print(factorial);
+
+
+
+#Write a program to check if a string is a palindrome.
+
+
+String  word,reverseWord;
+
+accept word;
+
+
+int firstLetter=0;
+int lastLetter=length(word)-1;
+
+while(firstLetter<lastLetter):
+	if(word[firstLetter]==word[lastletter]):
+		firstLetter =firstLetter+1;
+		lastLetter=lastLetter+1;
+	else:
+		print("Word is not a plaindrome");
+
+print("Word is a palindrome");	
+
+
+
+
+#Write a program to reverse a string.
+
+
+
+String word;
+
+accept word;
+
+String reverseWord;
+
+char position;
+
+
+for(int i=0; i<word.length(); i++)
+{
+   position=word.charAt(i);
+   reverseWord=position+reverseWord;       #Adding the word to the front of reverseWord
+}
+
+print(reverseWord);
+
+
+
+
+#Write a program to reverse each word of a string;
+
+
+ String[] words;
+ 
+ accept words;
+ 
+ String reverseListOfWords;
+ 
+ 
+ for i in the range of 0 to  words.length()
+	 String word=words[i];
+	 
+	 String reverseWord="";
+	 
+	 for j in the range of words.length()-1 to j>=0:
+	 
+			reverseWord=reverseWord+word.charAt(j);
+			
+	reverseListOfWords=reverseListOfWords+reverseWord;
+	
+printr(reverseListOfWords);
+
+
+	
+	
+#Write a program to check if a number is prime or not.
+
+
+int number,i;
+
+accept number;
+
+
+
+if( number==0 or number==1)then
+	print("Number is not a prime number");
+
+else:
+	for i in range of 2 to  number/2:
+		if(number%2==0)then
+			print("Number is not a prime number");
+
+print("Number is Prime number");
+
+
+
+
+#Write a program to display the first 100 prime numbers.
+
+
+int number,count,i;
+
+int primeCount=0;
+
+
+for number in range of 2 to primeCount<100:
+	
+	count=0;
+	for  i in range of 2 to number/2:
+		if(number%i==0):
+			count ++;
+			
+	if(count ==0)then
+		print(number);     #Printing the number
+		primeCount++;      #increasing the preim counter value;
+		
+		
+		
+		
+
+#Write a program to display the numbers in a pyramid fashion.
+
+
+
+int rows;
+
+accept rows;
+
+int position, space;
+
+for i in range 1 to rows :
+	position=0;
+	
+	for space  in range of 1 rows-1:
+		print(" ");
+		
+	while(position !=2 *i-1):
+		print(i);
+		position++;
+		
+	print("\n");     #so that new lines printed one by one;
+	
+		

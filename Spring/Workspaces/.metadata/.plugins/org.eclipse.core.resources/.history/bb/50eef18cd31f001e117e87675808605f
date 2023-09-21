@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- Auto wiring by name -->
+<bean id ="RoleBean" class="tms.iqgateway.entities.RoleEO">
+
+	<property name="roleName" value="Admin"/>
+	<property name="roleDesc" value="Admin operations"/> 
+</bean>
+<bean id ="AdminOperationsBean" class="tms.iqgateway.bussiness.AdminOperationsImpl" scope="singleton" autowire="byType">
+
+
+<!-- Auto wiring by class Name -->
+
+
+<!--  
+<bean id ="RoleBean" class="tms.iqgateway.entities.RoleEO">
+
+	<property name="roleName" value="Admin"/>
+	<property name="roleDesc" value="Admin operations"/> 
+</bean>
+<bean id ="AdminOperationsBean" class="tms.iqgateway.bussiness.AdminOperationsImpl" scope="singleton" autowire="byType"> -->
+
+
+
+
+<!-- Auto Wiring from Constructor -->
+<!-- <bean id ="RoleBean" class="tms.iqgateway.entities.RoleEO">
+
+	<property name="roleName" value="Admin"/>
+	<property name="roleDesc" value="Admin operations"/> 
+</bean>
+<bean id ="AdminOperationsBean" class="tms.iqgateway.bussiness.AdminOperationsImpl" scope="singleton" autowire="constructor"> -->
+
+
+
+
+
+
+
+
+
+
+
+</bean>
+
+</beans>

@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Thu Jul 13 15:22:49 IST 2023
+org.eclipse.jst.jee.server\:/binary\:D\:\\training\\Spring\\Workspaces\\Lesson07-JSF-Spring-Persistence-1\\WebContent\\WEB-INF\\lib\\spring-web-5.3.5.jar=D\:\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\Lesson07-JSF-Spring-Persistence-1\\WEB-INF\\lib\\spring-web-5.3.5.jar
+org.eclipse.jst.jee.server\:Lesson07-JSF-Spring-Persistence-1=D\:\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\Lesson07-JSF-Spring-Persistence-1
+org.eclipse.jst.jee.server\:/binary\:D\:\\training\\Spring\\Workspaces\\Lesson07-JSF-Spring-Persistence-1\\WebContent\\WEB-INF\\lib\\spring-web-5.3.5-sources.jar=D\:\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\Lesson07-JSF-Spring-Persistence-1\\WEB-INF\\lib\\spring-web-5.3.5-sources.jar

@@ -1,0 +1,26 @@
+
+
+#Write a Program to accept the physics, chemistry and mathematics marks and display the total marks secured , percentage scored and with what class they have passed?
+
+
+
+float physics,chemistry,mathematics;
+
+accept physics,chemistry,mathematics;
+
+float total= physics+chemistry+mathematics;
+
+#let's assume that total marks add upto 100 regarding the test;
+
+if(total>=90 && total<=100)then
+	print("First class");
+	
+else if(total>=70 && total<=90)then
+	print("Second class");
+	
+else if(total>=40 && total<=60)then
+	print("Thrid class);
+else:
+	print("Failed");
+
+

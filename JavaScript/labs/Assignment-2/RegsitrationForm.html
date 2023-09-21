@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form validation using HTML and JavaScript</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding:0px;
+        margin:0px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+      }
+
+      h1,
+      p {
+        text-align: center;
+      }
+      input {
+        margin: 0.25em 0em 1em 0em;
+        padding: 20px;
+        background-color: rgb(225, 225, 225);
+        border-radius: 0.25em;
+        color: black;
+        border:none;
+      }
+      button {
+        padding: 0.75em;
+        border: none;
+        outline: none;
+        background-color: rgb(68, 18, 232);
+        color: white;
+        border-radius: 0.25em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <div class="container">
+        <h1>Register</h1>
+        <div>
+            <span id = "message" style="color:red"> </span> <br><br>  
+        </div>
+        <label for="username"><b>Username</b></label>
+        <input
+          type="text"
+          placeholder="Enter username"
+          name="username"
+          id="username"
+        
+        />
+      
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+      
+        />
+       
+        <label for="pwd"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="pwd"
+          id="pwd"
+    
+        />
+      
+
+        <label for="pwd-repeat"><b>Repeat Password</b></label>
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          name="pwd-repeat"
+          id="pwd-repeat"
+     
+        />
+        <span id = "message" style="color:red"> </span> <br><br>  
+
+        <button id="submit" type="submit">Register</button>
+      </div>
+      
+    </form>
+  </body>
+  <script src="scripts/Registration.js"></script>
+</html>

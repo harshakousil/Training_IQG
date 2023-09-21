@@ -1,0 +1,24 @@
+*
+{
+    padding:0px;
+    margin:0px;
+}
+
+#heading1
+{
+    text-transform: uppercase;
+}
+#para1
+{
+    padding-top:25px ;
+    padding-bottom: 25px;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+#para2
+{
+    text-transform: capitalize;
+    text-indent: 4cm;
+
+}

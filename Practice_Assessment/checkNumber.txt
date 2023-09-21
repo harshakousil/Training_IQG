@@ -1,0 +1,15 @@
+#Write a program to check whether a given number is positive or negative.
+
+
+int number;
+ 
+accept number;
+
+if(number==0)then
+	print(number)		#if number if 0 then print the number itself
+else if(number <0)then
+	print("Negative number");
+else if(number >0)then
+	print("Positive number");
+else:
+	print("Invalid input");

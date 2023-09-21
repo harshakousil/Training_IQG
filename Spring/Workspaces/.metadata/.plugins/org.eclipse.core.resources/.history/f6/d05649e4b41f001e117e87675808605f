@@ -1,0 +1,5 @@
+package bussiness.tms;
+
+public interface AdminOperations {
+
+}

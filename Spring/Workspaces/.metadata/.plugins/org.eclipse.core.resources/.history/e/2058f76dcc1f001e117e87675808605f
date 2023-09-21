@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- Auto wiring by name -->
+
+<!-- <bean id ="customerRef" class="training.iqgateway.business.Customer">
+
+	<property name="id" value="1001"/>
+	<property name="name" value="Rahul"/>
+	<property name="address" value="Indira nagar"/>
+	<property name="phone" value="987656872"/> 
+
+</bean>
+<bean id ="ccBean" class="training.iqgateway.business.CurrencyConverterImpl" scope="singleton" autowire="byName"> -->
+
+
+<bean id ="customerBean" class="training.iqgateway.business.Customer">
+
+	<property name="id" value="1001"/>
+	<property name="name" value="Rahul"/>
+	<property name="address" value="Indira nagar"/>
+	<property name="phone" value="987656872"/> 
+
+</bean>
+<bean id ="customerBean1" class="entities.Customer">
+
+	<property name="id" value="1001"/>
+	<property name="name" value="Rahul"/>
+	<property name="address" value="Indira nagar"/>
+	<property name="phone" value="987656872"/> 
+
+</bean>
+<bean id ="ccBean" class="training.iqgateway.business.CurrencyConverterImpl" scope="singleton" autowire="byType">
+
+
+
+
+
+
+
+
+</bean>
+
+</beans>

@@ -1,0 +1,9 @@
+int age;
+
+accept age;
+
+if(age>=18)then
+	print("eligible for voting");
+else:
+	print("Sorry,You are not eligible");
+	

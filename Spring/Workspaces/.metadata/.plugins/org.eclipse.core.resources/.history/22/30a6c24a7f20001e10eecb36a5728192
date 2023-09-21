@@ -1,0 +1,5 @@
+package training.iqgateway.rowmappers;
+
+public class DepartmentRowMapper {
+
+}

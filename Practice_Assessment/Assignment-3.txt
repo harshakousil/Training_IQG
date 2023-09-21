@@ -1,0 +1,279 @@
+#Write a program to store elements in an array and print them.
+
+
+int arr[]=new arr[10]
+
+for i in range 0 to 10:
+	accept number
+	arr[i]=number;
+
+
+for i in range of 0 to arr.length():
+	print(arr[i]);
+	i++;
+	
+	
+#Write a program to read n number of values in an array and display them in reverse order
+
+
+int n;
+
+accept n;		#take the n number
+
+int arr[]=new arr[n]
+
+for i in range 0 to n:		#loop until n numbers
+	accept number
+	arr[i]=number;
+
+for i in range of arr.length()-1 to 0:      #logic to print in the reverse order
+	print(arr[i]);
+	i--;
+	
+	
+
+
+#Write a program to find the sum of all elements of the array.
+
+
+int arr=new arr[5];
+for i in range 0 to 5:
+	accept number
+	arr[i]=number;
+
+int sumOfArray=0;
+
+for i in range 0 to arr.length():
+	
+	sum=sum+arr[i];
+
+print(sumOfArray);
+
+
+#Write a program to copy the elements of one array into another array.
+
+
+int firstArr=new firstArr[5];
+
+for i in range 0 to 5:   #to store the array values
+	accept number
+	arr[i]=number;
+	
+int secondArr=new secondArr[firstArr.length()];
+
+
+for i in range of 0 to firstArr.length():
+
+	secondArr[i]=firstArr[i];		#Copy the one array elements to second array
+	
+for i in range of 0 to secondArr.length():
+	print(secondArr[i])				#printing the copied array
+	
+
+
+#Write a program to count the total number of duplicate elements in an array.
+
+
+int arr=new arr[5];
+
+int duplicateCount;
+
+for i in range 0 to 5:   #to store the array values
+	accept number
+	arr[i]=number;
+	
+	
+for i in range of 0 to arr.length():
+
+	for j in range of i to arr.length():
+	
+		if arr[i]==arr[j]:		#check for duplicate elements
+			duplicateCount++;
+	print(arr[i] +" Duplicated " + duplicateCount);		
+
+	
+	
+	
+#Write a program to print all unique elements in an array.
+
+int arr=new arr[5];
+
+int duplicateCount;
+
+for i in range 0 to 5:   #to store the array values
+	accept number
+	arr[i]=number;
+	
+
+for i in range of 0 to arr.length():
+
+	for j in range of i to arr.length():
+	
+		if arr[i]==arr[j]:		#check for duplicate elements
+			duplicateCount++;
+	
+	if(duplicateCount==0)then   #if there is no duplicate element it is a unique element
+		print(arr[i]+" is a unique element");
+		
+
+
+
+
+#Write a program to merge two arrays of the same size sorted in descending order.
+
+
+int firstArrrr[]=new firstArr[10]
+
+for i in range 0 to 10:
+	accept number
+	firstArr[i]=number;
+	
+int secondArr[]=new secondArr[10]
+
+for i in range 0 to 10:
+	accept number
+	secondArr[i]=number;
+
+
+int mergedArr[]= new mergedArr[firstArr.length()+secondArr.length()];
+
+for i in range 0 to firstArr.length:
+	mergedArr[i]=firstArr[i];
+
+int k= firstArr.length();	
+ 
+for j in range 0 to secondArr.length;
+	mergedArr[k]=secondArr[i];       
+	k++;
+mergedArr.sort();           #sort the mergedArr also;
+
+for i in range of 0 to mergedArr.length():
+	print(mergedArr[i]);
+	
+	
+	
+	
+
+#Write a program to count the frequency of each element of an array.
+	
+
+int arr[]=new arr[10]
+
+for i in range 0 to 10:
+	accept number;
+	arr[i]=number;
+	
+String frequency=[]*arr.length();
+
+int visited=-1;
+
+
+for i in range of 0 to arr.length():
+	count=1
+	for j in range i+1 to arr.length():
+		if(arr[i]==arr[j]):
+			count=count+1
+			 frequency[i]="visited";
+	if(frequency[i]!="visited"):
+		frequency[i]=count
+		
+
+
+
+for i in range 0 to frequency.length():
+	print(arr[i] +" "+frequency[i]);
+
+
+
+#Write a program to find the maximum and minimum elements in an array.
+
+
+
+int arr[]=new arr[10]
+
+for i in range 0 to 10:
+	accept number;
+	arr[i]=number;
+
+int minimumNumber=0;
+int maximumNumber=0;
+
+for i in range of 0 to arr.length():
+
+	if(arr[i]<=minimumNumber):
+	
+		minimumNumber=arr[i];
+		
+	if(arr[i]=>maximumNumber):
+		
+		maximumNumber=arr[i];
+	
+print(minimumNumber);
+print(maximumNumber);
+
+
+#Write a program to separate odd and even integers into separate arrays.
+
+int arr[]=new arr[10]
+
+for i in range 0 to 10:
+	accept number;
+	arr[i]=number;
+	
+int evenArr[]=new evenArr[10];
+
+int oddArr[]=new oddArr[10];
+
+
+for i in range of 0 to arr.length():
+
+	if(arr[i]%2==0)then
+		evenArr.add(arr[i]);
+		
+	else if(arr[i]%2 !==0)then
+		oddArr.add(arr[i]);
+		
+
+#Write a program to sort elements of an array in ascending order.
+
+int arr[]=new arr[10]
+
+for i in range 0 to 10:
+	accept number;
+	arr[i]=number;
+	
+for i in range of 0 to arr.length():
+	for j in range  of i+1 to arr.length():
+		if(arr[i]>arr[j]):
+			
+			temp=arr[i];
+			arr[i]=arr[j];
+			arr[j]=temp;
+
+
+for i in range of 0 to arr.length():
+	print(arr[i]);
+
+
+
+
+#Write a program to sort elements of an array in descending order.
+
+int arr[]=new arr[10]
+
+for i in range 0 to 10:
+	accept number;
+	arr[i]=number;
+	
+for i in range of 0 to arr.length():
+	for j in range  of i+1 to arr.length():
+		if(arr[i]<arr[j]):
+			
+			temp=arr[i];
+			arr[i]=arr[j];
+			arr[j]=temp;
+
+
+for i in range of 0 to arr.length():
+	print(arr[i]);
+

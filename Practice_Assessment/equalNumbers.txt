@@ -1,0 +1,14 @@
+#Write a program to accept two integers and check whether they are equal or not.
+
+
+int firstNumber,secondNumber;
+
+
+accept firstNumber,secondNumber;
+
+
+if(firstNumber == secondNumber)then
+	print("Both numbers are equal");
+else:
+	print("Both numbers are not equal");
+	

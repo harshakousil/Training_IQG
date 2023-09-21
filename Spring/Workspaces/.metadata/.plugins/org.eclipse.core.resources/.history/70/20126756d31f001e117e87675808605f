@@ -1,0 +1,21 @@
+package tms.iqgateway.bussiness;
+
+import tms.iqgateway.entities.RoleEO;
+import tms.iqgateway.entities.UserEO;
+
+public interface AdminOperations {
+	
+	public Integer addUser(UserEO user);
+	
+	public Integer removeUser(UserEO user);
+	
+	public Integer modifyUser(UserEO user);
+	
+	public String addRole(RoleEO role);
+	
+	public String modifyRole(RoleEO role);
+	
+	public String removeRole(RoleEO role);
+	
+
+}

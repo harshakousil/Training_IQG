@@ -1,0 +1,17 @@
+package bussiness.tms;
+
+public interface AdminOperations {
+	
+	public Integer addUser(UserEO user);
+	
+	public Integer removeUser(UserEO user);
+	
+	
+	public String addRole();
+	
+	public String modifyRole();
+	
+	public String
+	
+
+}

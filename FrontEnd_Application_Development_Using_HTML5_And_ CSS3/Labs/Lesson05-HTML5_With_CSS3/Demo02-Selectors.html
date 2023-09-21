@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            color:darkgreen;
+            font-size: 1.4em;
+        }
+        h1,h3{
+            color: chartreuse;
+            text-transform: uppercase;
+        }
+
+        /*child selectors*/
+
+        nav > ul > li{
+            background-color: orange;
+        }
+        h1 +p{
+            color:pink;
+        }
+        h1 ~ p{
+            color :purple;
+        }
+        input[required]
+        {
+            background-color: aquamarine;
+        }
+        input[type="email"]
+        {
+            border: 2px solid black;
+        }
+        input[type="submit"]:hover
+{
+    cursor: crosshair;
+}
+    </style>
+</head>
+<body>
+    <!-- heading for the page -->
+    <header>
+        <p>wowwwww</p>
+        <h1>The  next big conference for front end Developers</h1>
+        <p>wohhhh</p>
+        <p>wowwohhh</p>
+        <h3>Join Us This year</h3>
+    </header>
+    <!-- Navigatiom AMon the Ui pages in the application -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">WorkShops</a></li>
+            <li><a href="#">Submit Proposals</a></li>
+
+        </ul>
+    </nav>
+     <!-- Section [portions of the page] -->
+    <section id="Section-1">
+        <header>
+            <h3>Speakers</h3>
+        </header>
+        <article>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi illo rerum vero consequuntur! Ad dicta exercitationem nisi enim, saepe numquam debitis ipsa sed. Provident iusto nobis praesentium voluptatem similique?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laudantium nulla maxime incidunt architecto, deleniti accusantium nostrum quod magni! Iusto qui modi maxime soluta ipsa, porro voluptates! Facilis, rem quae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed quia expedita distinctio vel ipsum illo obcaecati pariatur, incidunt vitae placeat voluptas repellendus sequi. Velit rerum cumque quae a? Deleniti!
+
+        </article>
+    </section>
+    <section id="Section-2">
+        <header>
+            <h3>WorkShops</h3>
+        </header>
+        <article>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi illo rerum vero consequuntur! Ad dicta exercitationem nisi enim, saepe numquam debitis ipsa sed. Provident iusto nobis praesentium voluptatem similique?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laudantium nulla maxime incidunt architecto, deleniti accusantium nostrum quod magni! Iusto qui modi maxime soluta ipsa, porro voluptates! Facilis, rem quae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed quia expedita distinctio vel ipsum illo obcaecati pariatur, incidunt vitae placeat voluptas repellendus sequi. Velit rerum cumque quae a? Deleniti!
+            
+        </article>
+    </section>
+    <section id="Section-3">
+        <header>
+            <h3>Submit Proposals</h3>
+        </header>
+        <article>
+            
+        </article>
+    </section>
+
+    <footer>
+        &copy; copyright 2023, All Rights are Reserved
+        
+    </footer>
+
+
+    <form action="">
+        <table>
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" id="firstName" required/></td>
+            </tr>
+            <tr>
+                <td> Email :</td>
+                <td><input type="email" id="email"/></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

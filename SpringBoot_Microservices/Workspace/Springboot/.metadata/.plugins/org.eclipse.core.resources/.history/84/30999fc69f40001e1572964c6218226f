@@ -1,0 +1,176 @@
+package training.iqgateway.pharma;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document("OrderReports")
+public class OrderReportsEO {
+	
+	
+
+	
+	private String status;
+	
+	private String medicineName;
+	
+	private String RetailerName;
+	
+	private Date orderDate;
+	
+	private Date deliveryDate;
+	
+	private String Quantity;
+	
+	private String receipt;
+
+	
+	
+	
+	public String getReceipt() {
+		return receipt;
+	}
+
+
+
+
+	public void setReceipt(String receipt) {
+		this.receipt = receipt;
+	}
+
+
+
+
+	public OrderReportsEO()
+	{
+		
+	}
+	
+	
+
+
+	public OrderReportsEO(String status, String medicineName, String retailerName, Date orderDate, Date deliveryDate,
+			String quantity, String receipt ) {
+		super();
+		this.status = status;
+		this.medicineName = medicineName;
+		this.RetailerName = retailerName;
+		this.orderDate = orderDate;
+		this.deliveryDate = deliveryDate;
+		this.Quantity = quantity;
+		this.receipt=receipt;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	@Override
+	public String toString() {
+		return "OrderReportsEO [status=" + status + ", medicineName=" + medicineName + ", RetailerName=" + RetailerName
+				+ ", orderDate=" + orderDate + ", deliveryDate=" + deliveryDate + ", Medicine_Quantity="
+				+ Quantity + "]";
+	}
+
+
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getMedicineName() {
+		return medicineName;
+	}
+
+	public void setMedicineName(String medicineName) {
+		this.medicineName = medicineName;
+	}
+
+	public String getRetailerName() {
+		return RetailerName;
+	}
+
+	public void setRetailerName(String retailerName) {
+		RetailerName = retailerName;
+	}
+
+	public Date getOrderDate() {
+		return orderDate;
+	}
+
+	public void setOrderDate(Date orderDate) {
+		this.orderDate = orderDate;
+		
+		Date dateString =orderDate ;
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yy:mm:dd");
+
+        try {
+            // Now, let's extract year, month, and day to create the equivalent date object
+            int year = dateString.getYear(); // Year is 1900-based
+            int month = dateString.getMonth();
+            int day = dateString.getDate();
+
+            // Create a Date object using the extracted values
+            Date convertedDate = new Date(year, month, day);
+            this.orderDate=convertedDate;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+	}
+
+	public Date getDeliveryDate() {
+		return deliveryDate;
+	}
+
+	public void setDeliveryDate(Date deliveryDate) {
+		this.deliveryDate = deliveryDate;
+		Date dateString =deliveryDate ;
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yy:mm:dd");
+
+        try {
+            // Now, let's extract year, month, and day to create the equivalent date object
+            int year = dateString.getYear() + 1900; // Year is 1900-based
+            int month = dateString.getMonth();
+            int day = dateString.getDate();
+
+            // Create a Date object using the extracted values
+            Date convertedDate = new Date(year, month, day);
+            this.deliveryDate=convertedDate;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+	}
+
+
+
+	public String getQuantity() {
+		return Quantity;
+	}
+
+
+
+	public void setQuantity(String quantity) {
+		Quantity = quantity;
+	}
+
+
+	
+	
+	
+
+}

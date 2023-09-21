@@ -1,0 +1,5 @@
+package tms.iqgateway.entities;
+
+public class VehicleEO {
+
+}

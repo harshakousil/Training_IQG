@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id ="customerBean" class="training.iqgateway.business.Customer">
+
+	<!--  <property name="id" value="1001"/>
+	<property name="name" value="Rahul"/>
+	<property name="address" value="Indira nagar"/>
+	<property name="phone" value="987656872"/> -->
+	
+	<constructor-arg index="0" value="1001"></constructor-arg>
+	<constructor-arg index="1" value="Kousil"></constructor-arg>
+	<constructor-arg index="2" value="Vijayawada"></constructor-arg>
+	<constructor-arg index="3" value="9897657689"></constructor-arg>
+
+</bean>
+<bean id ="ccBean" class="training.iqgateway.business.CurrencyConverterImpl" scope="singleton">
+
+<!-- setter Injection -->
+
+  <!--  <property name="customerRef" ref="customerBean"/> -->
+  
+  <constructor-arg ref="customerBean"/>
+
+</bean>
+
+</beans>

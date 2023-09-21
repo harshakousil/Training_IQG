@@ -1,0 +1,83 @@
+package training.iqgateway.dao.impl;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import training.iqgateway.dao.DepartmentDAO;
+import training.iqgateway.entities.DepartmentEO;
+
+public class DepartmentDAOImpl implements DepartmentDAO {
+	
+	
+	private SessionFactory sessionFactoryRef;
+	
+	public DepartmentDAOImpl()
+	{
+		
+	}
+
+	public SessionFactory getSessionFactoryRef() {
+		return sessionFactoryRef;
+	}
+
+	public void setSessionFactoryRef(SessionFactory sessionFactoryRef) {
+		this.sessionFactoryRef = sessionFactoryRef;
+	}
+	
+
+	public DepartmentDAOImpl(SessionFactory sessionFactoryRef) {
+		super();
+		this.sessionFactoryRef = sessionFactoryRef;
+	}
+
+	@Override
+	public Integer insertDepartment(DepartmentEO deptEORef) {
+		// TODO Auto-generated method stub
+		
+		Session sessionRef= sessionFactoryRef.openSession();
+		
+		sessionRef.beginTransaction();
+		Integer returnedpk =(Integer) sessionRef.save(deptEORef);
+		sessionRef.getTransaction().commit();
+		sessionRef.close();
+		return returnedpk;
+	}
+
+	@Override
+	public void updateDepartment(DepartmentEO deptEORef) {
+		// TODO Auto-generated method stub
+		Session sessionRef= sessionFactoryRef.openSession();
+		
+		sessionRef.beginTransaction();
+		sessionRef.update(deptEORef);
+		sessionRef.getTransaction().commit();
+		sessionRef.close();
+	}
+
+	@Override
+	public void deleteDepartment(Integer deptId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public DepartmentEO findDepartmentByID(Integer deptId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<DepartmentEO> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<DepartmentEO> findAllDeprtmentsByLocation(Integer LocationId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,14 @@
+#Write a program to check whether a given number is even or odd.
+
+
+
+int number;
+ 
+accept number;
+
+if(number==0  or number==1)then
+	print(number);
+else if(number%2==0)then
+	print('Even number");
+else:
+	print("odd number");

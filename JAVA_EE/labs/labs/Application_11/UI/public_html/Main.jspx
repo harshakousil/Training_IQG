@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=windows-1252"/>
+  <f:view>
+    <af:document id="d1" binding="#{productBrowsingBean.d1}">
+      <af:form id="f1" binding="#{productBrowsingBean.f1}">
+        <af:panelSplitter binding="#{productBrowsingBean.ps1}" id="ps1"
+                          splitterPosition="120">
+          <f:facet name="first">
+            <af:panelAccordion binding="#{productBrowsingBean.pa1}" id="pa1">
+              <af:showDetailItem text="Categories"
+                                 binding="#{productBrowsingBean.sdi1}"
+                                 id="sdi1">
+                <af:tree id="cateogryTree"
+                         value="#{productBrowsingBean.treeModel}" var="Category"
+                         binding="#{productBrowsingBean.cateogryTree}">
+                  <f:facet name="nodeStamp">
+                    <af:outputText value="#{category.categoryName}"
+                                   binding="#{productBrowsingBean.ot1}"
+                                   id="ot1"/>
+                  </f:facet>
+                </af:tree>
+              </af:showDetailItem>
+            </af:panelAccordion>
+          </f:facet>
+          <f:facet name="second">
+            <af:panelGroupLayout binding="#{productBrowsingBean.pgl1}"
+                                 id="pgl1" layout="horizontal">
+              <af:panelHeader text="Products"
+                              binding="#{productBrowsingBean.ph1}" id="ph1">
+                <f:facet name="context"/>
+                <f:facet name="menuBar"/>
+                <f:facet name="toolbar"/>
+                <f:facet name="legend"/>
+                <f:facet name="info"/>
+                <af:table value="#{productBrowsingBean.allProducts}" var="row"
+                          rowBandingInterval="0"
+                          binding="#{productBrowsingBean.productsTable}"
+                          id="productsTable" columnStretching="Last">
+                  <af:column sortable="false" headerText="Additional Info"
+                             align="start" id="c1">
+                    <af:outputText value="#{row.additionalInfo}" id="ot12"/>
+                  </af:column>
+                  <af:column sortable="false" headerText="Cost Price"
+                             align="start" id="c9">
+                    <af:outputText value="#{row.costPrice}" id="ot6"/>
+                  </af:column>
+                  <af:column sortable="false" headerText="Description"
+                             align="start" id="c10">
+                    <af:outputText value="#{row.description}" id="ot7"/>
+                  </af:column>
+                  <af:column sortable="false" headerText="External Url"
+                             align="start" id="c12">
+                    <af:outputText value="#{row.externalUrl}" id="ot8"/>
+                  </af:column>
+                  <af:column sortable="false" headerText="List Price"
+                             align="start" id="c4">
+                    <af:outputText value="#{row.listPrice}" id="ot3"/>
+                  </af:column>
+                  <af:column sortable="false" headerText="Min Price"
+                             align="start" id="c2">
+                    <af:outputText value="#{row.minPrice}" id="ot13"/>
+                  </af:column>
+                  <af:column sortable="false" headerText="Product Id"
+                             align="start" id="c5">
+                    <af:outputText value="#{row.productId}" id="ot10"/>
+                  </af:column>
+                  <af:column sortable="false" headerText="Product Name"
+                             align="start" id="c3">
+                    <af:outputText value="#{row.productName}" id="ot4"/>
+                  </af:column>
+                  <af:column sortable="false" headerText="Shipping Class Code"
+                             align="start" id="c8">
+                    <af:outputText value="#{row.shippingClassCode}" id="ot9"/>
+                  </af:column>
+                  <af:column sortable="false" headerText="Supplier Id"
+                             align="start" id="c11">
+                    <af:outputText value="#{row.supplierId}" id="ot5"/>
+                  </af:column>
+                  <af:column sortable="false"
+                             headerText="Warranty Period Months" align="start"
+                             id="c6">
+                    <af:outputText value="#{row.warrantyPeriodMonths}"
+                                   id="ot2"/>
+                  </af:column>
+                  <af:column sortable="false" headerText="Category"
+                             align="start" id="c7">
+                    <af:outputText value="#{row.category}" id="ot11"/>
+                  </af:column>
+                </af:table>
+              </af:panelHeader>
+            </af:panelGroupLayout>
+          </f:facet>
+        </af:panelSplitter>
+      </af:form>
+    </af:document>
+  </f:view>
+  <!--oracle-jdev-comment:auto-binding-backing-bean-name:productBrowsingBean-->
+</jsp:root>

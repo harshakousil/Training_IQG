@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=Spring-Boot-ORM/C:\/Users\/kousil.lakkapragada\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.7.14\/spring-data-jpa-2.7.14.jar&lt;org.springframework.data.jpa.repository.support(CrudMethodMetadata.class[CrudMethodMetadata" modifiers="1537" timestamp="1689579067026"/>
+<typeInfo handle="=Spring-Boot-ORM/src\/main\/java&lt;training.iqgateway.springboot.SpringBootORM{DepartmentService.java[DepartmentService" modifiers="513" timestamp="1689913920024"/>
+<typeInfo handle="=Spring-Boot-Offence/src\/main\/java&lt;training.iqgateway.springboot.SpringBootOffence{OffenceService.java[OffenceService" modifiers="513" timestamp="1689592638038"/>
+<typeInfo handle="=spring-boot-mongo/C:\/Users\/kousil.lakkapragada\/.m2\/repository\/org\/springframework\/data\/spring-data-mongodb\/3.4.14\/spring-data-mongodb-3.4.14.jar&lt;org.springframework.data.mongodb.core.mapping(MongoPersistentProperty.class[MongoPersistentProperty" modifiers="1537" timestamp="1689612729483"/>
+<typeInfo handle="=spring-boot-mongo/src\/main\/java&lt;training.iqgateway.springbootMongo.springbootmongo{MongoOffenceService.java[MongoOffenceService" modifiers="513" timestamp="1690015878684"/>
+<typeInfo handle="=Spring-Boot-ORM/C:\/Users\/kousil.lakkapragada\/.m2\/repository\/org\/springframework\/data\/spring-data-commons\/2.7.14\/spring-data-commons-2.7.14.jar&lt;org.springframework.data.repository(CrudRepository.class[CrudRepository" modifiers="1537" timestamp="1689577201853"/>
+<typeInfo handle="=Tms-TransferVehicle/src\/main\/java&lt;tms.rto.transfervehicle{OffenceDetailsService.java[OffenceDetailsService" modifiers="513" timestamp="1690027710997"/>
+<typeInfo handle="=spring-boot-mongo/C:\/Users\/kousil.lakkapragada\/.m2\/repository\/org\/springframework\/data\/spring-data-mongodb\/3.4.14\/spring-data-mongodb-3.4.14.jar&lt;org.springframework.data.mongodb.repository(MongoRepository.class[MongoRepository" modifiers="1537" timestamp="1689612729483"/>
+</typeInfoHistroy>
